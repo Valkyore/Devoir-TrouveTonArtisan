@@ -8,6 +8,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { CardComponent } from './card/card.component';
+import { ArtisanListeComponent } from './pages/artisan-liste/artisan-liste.component';
+import { ArtisanDetailComponent } from './pages/artisan-detail/artisan-detail.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { CardComponent } from './card/card.component';
     HomeComponent,
     NavbarComponent,
     FooterComponent,
-    CardComponent
+    CardComponent,
+    ArtisanListeComponent,
+    ArtisanDetailComponent
   ],
   imports: [
     BrowserModule,
