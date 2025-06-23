@@ -1,1 +1,8 @@
-<p>artisan-liste works!</p>
+  <div class="content">
+  <ul *ngIf="artisans.length > 0">
+    <li *ngFor="let artisan of artisans">
+      <strong>{{ artisan.name }}</strong> - {{ artisan.specialty }} - {{ artisan.location }}
+    </li>
+  </ul>
+  <p *ngIf="artisans.length === 0">Aucun artisan trouvé.</p>
+</div>
