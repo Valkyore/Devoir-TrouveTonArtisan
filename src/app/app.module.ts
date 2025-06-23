@@ -10,6 +10,7 @@ import { FooterComponent } from './footer/footer.component';
 import { CardComponent } from './card/card.component';
 import { ArtisanListeComponent } from './pages/artisan-liste/artisan-liste.component';
 import { ArtisanDetailComponent } from './pages/artisan-detail/artisan-detail.component';
+import { HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ArtisanDetailComponent } from './pages/artisan-detail/artisan-detail.co
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    HttpClientModule,
   ],
   providers: [
     provideClientHydration(withEventReplay())
