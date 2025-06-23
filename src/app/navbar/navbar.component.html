@@ -1,0 +1,37 @@
+<nav class="navbar navbar-expand-lg py-5 shadow p-3 mb-5">
+    <div class="container-fluid flex-column">
+
+      <!-- Bloc logo + menu -->
+      <div class="w-100 d-flex justify-content-between align-items-center">
+        <!-- Logo -->
+        <a class="navbar-brand me-4" routerLink="/">
+          <img src="Logo.png" width="500" height="250" alt="Logo">
+        </a>
+
+        <!-- Bouton burger -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Liens -->
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav d-flex justify-content-between w-100 px-5">
+            <a class="nav-link fs-5 fw-bold text-primary" routerLink="/artisanListe">Bâtiment</a>
+            <a class="nav-link fs-5 fw-bold text-primary" routerLink="/">Fabrication</a>
+            <a class="nav-link fs-5 fw-bold text-primary" routerLink="/">Services</a>
+            <a class="nav-link fs-5 fw-bold text-primary" routerLink="/">Alimentation</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Barre de recherche centrée -->
+      <div id="searchBar" class="w-100 d-flex justify-content-center mt-4">
+        <form class="d-flex" role="search" style="max-width: 800px; width: 100%;">
+          <input class="form-control me-2" type="search" placeholder="Rechercher un artisan..." aria-label="Search">
+          <button class="btn btn-outline-primary" type="submit">Rechercher</button>
+        </form>
+      </div>
+
+    </div>
+  </nav>

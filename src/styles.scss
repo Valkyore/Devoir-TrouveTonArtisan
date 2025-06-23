@@ -2,3 +2,102 @@
 
 /* Importing Bootstrap SCSS file. */
 @import 'bootstrap/scss/bootstrap';
+
+body {
+
+  background-color: #00497c;
+}
+
+nav{
+background-color: #f1f8fc;
+}
+#footer{
+    background-color: #f1f8fc;
+}
+
+h2{
+    max-width: 600px;
+  padding: 1rem;
+  text-align: center;
+  color: white;
+  border: 1px solid white;
+}
+
+.accordion-item {
+  width: 100%;
+  margin-bottom: 1rem;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.accordion-button {
+  width: 100%;
+  font-weight: bold;
+  font-size: 1.3rem;
+  padding: 1rem 1.5rem;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-body {
+  font-size: 1.1rem;
+  padding: 2rem;
+  background-color: #fff;
+}
+
+.accordion{
+    width: 100%;
+}
+.accordion-header{
+  width: 100%;
+}
+
+#flush-headingThree{
+  width: 100%;
+}
+
+#monthWorker {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
+  padding: 1rem;
+}
+
+.footer {
+  background-color: #f8f9fa;
+  text-align: center;
+  padding: 1rem;
+  border-top: 1px solid #dee2e6;
+}
+
+#cards{
+  padding-bottom: 200px;
+  padding-top: 200px;
+}
+
+#monthWorker {
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+}
