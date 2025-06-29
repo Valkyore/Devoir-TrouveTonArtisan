@@ -1,1 +1,14 @@
-<p>artisan-detail works!</p>
+<div class="container mt-4" *ngIf="artisan">
+  <h2>{{ artisan.name }}</h2>
+  <p><strong>Spécialité :</strong> {{ artisan.specialty }}</p>
+  <p><strong>Note :</strong> {{ artisan.note }} / 5</p>
+  <p><strong>Ville :</strong> {{ artisan.location }}</p>
+  <p><strong>À propos :</strong> {{ artisan.about }}</p>
+  <a *ngIf="artisan.website" [href]="artisan.website" target="_blank">Voir le site web</a>
+  <br />
+  <a routerLink="/" class="btn btn-secondary mt-3">Retour à l'accueil</a>
+
+  <div *ngIf="!artisan">
+  <p class="text-danger">Artisan non trouvé</p>
+</div>
+</div>
