@@ -1,8 +1,25 @@
-  <div class="content">
-  <ul *ngIf="artisans.length > 0">
-    <li *ngFor="let artisan of artisans">
-      <strong>{{ artisan.name }}</strong> - {{ artisan.specialty }} - {{ artisan.location }}
-    </li>
-  </ul>
-  <p *ngIf="artisans.length === 0">Aucun artisan trouvé.</p>
+<div class="container mt-4">
+  <div class="row">
+    <div *ngIf="filteredArtisans.length > 0; else noData" class="d-flex flex-wrap justify-content-center gap-4">
+      <div *ngFor="let artisan of filteredArtisans" class="card" style="width: 18rem;">
+        <img
+          class="card-img-top img-fluid fixed-img"
+          [src]="'https://via.placeholder.com/286x180?text=' + artisan.specialty"
+          [alt]="artisan.name"
+        />
+        <div class="card-body">
+          <h5 class="card-title">{{ artisan.name }}</h5>
+          <p class="card-text">
+            <strong>Spécialité :</strong> {{ artisan.specialty }}<br />
+            <strong>Ville :</strong> {{ artisan.location }}<br />
+            <strong>Note :</strong> {{ artisan.note }} / 5
+          </p>
+          <a [routerLink]="['/artisan', artisan.id]" class="btn btn-primary">Voir détail</a>
+        </div>
+      </div>
+    </div>
+    <ng-template #noData>
+      <p class="text-center">Aucun artisan trouvé.</p>
+    </ng-template>
+  </div>
 </div>

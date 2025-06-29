@@ -20,7 +20,7 @@ export interface Artisan {
 })
 
 export class ArtisansService {
-  private _url: string ="assets/data/datas.json"
+  private _url: string ="/assets/data/datas.json"
 
   constructor(private http: HttpClient) { }
 
